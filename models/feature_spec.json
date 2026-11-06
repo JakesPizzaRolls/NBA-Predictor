@@ -1,0 +1,1250 @@
+{
+  "model": "NBA Predictor v1.0",
+  "target": "home_win",
+  "prediction_time": "before tipoff",
+  "last_historical_season": 2022,
+  "feature_count": 177,
+  "feature_order": [
+    "game_type_code",
+    "home_games_seen",
+    "home_rest_days",
+    "home_back_to_back",
+    "home_winrate_5",
+    "home_pts_5",
+    "home_fgm_5",
+    "home_fga_5",
+    "home_fg3m_5",
+    "home_fg3a_5",
+    "home_ftm_5",
+    "home_fta_5",
+    "home_oreb_5",
+    "home_dreb_5",
+    "home_reb_5",
+    "home_ast_5",
+    "home_stl_5",
+    "home_blk_5",
+    "home_tov_5",
+    "home_pf_5",
+    "home_opp_pts_5",
+    "home_possessions_5",
+    "home_off_rating_5",
+    "home_def_rating_5",
+    "home_net_rating_5",
+    "home_winrate_10",
+    "home_pts_10",
+    "home_fgm_10",
+    "home_fga_10",
+    "home_fg3m_10",
+    "home_fg3a_10",
+    "home_ftm_10",
+    "home_fta_10",
+    "home_oreb_10",
+    "home_dreb_10",
+    "home_reb_10",
+    "home_ast_10",
+    "home_stl_10",
+    "home_blk_10",
+    "home_tov_10",
+    "home_pf_10",
+    "home_opp_pts_10",
+    "home_possessions_10",
+    "home_off_rating_10",
+    "home_def_rating_10",
+    "home_net_rating_10",
+    "home_winrate_20",
+    "home_pts_20",
+    "home_fgm_20",
+    "home_fga_20",
+    "home_fg3m_20",
+    "home_fg3a_20",
+    "home_ftm_20",
+    "home_fta_20",
+    "home_oreb_20",
+    "home_dreb_20",
+    "home_reb_20",
+    "home_ast_20",
+    "home_stl_20",
+    "home_blk_20",
+    "home_tov_20",
+    "home_pf_20",
+    "home_opp_pts_20",
+    "home_possessions_20",
+    "home_off_rating_20",
+    "home_def_rating_20",
+    "home_net_rating_20",
+    "home_roster_players",
+    "home_player_points_mean",
+    "home_player_points_top5",
+    "home_player_fga_mean",
+    "home_player_fga_top5",
+    "home_player_assists_mean",
+    "home_player_assists_top5",
+    "home_player_rebounds_mean",
+    "home_player_rebounds_top5",
+    "home_player_turnovers_mean",
+    "home_player_turnovers_top5",
+    "home_player_events_mean",
+    "home_player_events_top5",
+    "home_player_usage_concentration",
+    "away_games_seen",
+    "away_rest_days",
+    "away_back_to_back",
+    "away_winrate_5",
+    "away_pts_5",
+    "away_fgm_5",
+    "away_fga_5",
+    "away_fg3m_5",
+    "away_fg3a_5",
+    "away_ftm_5",
+    "away_fta_5",
+    "away_oreb_5",
+    "away_dreb_5",
+    "away_reb_5",
+    "away_ast_5",
+    "away_stl_5",
+    "away_blk_5",
+    "away_tov_5",
+    "away_pf_5",
+    "away_opp_pts_5",
+    "away_possessions_5",
+    "away_off_rating_5",
+    "away_def_rating_5",
+    "away_net_rating_5",
+    "away_winrate_10",
+    "away_pts_10",
+    "away_fgm_10",
+    "away_fga_10",
+    "away_fg3m_10",
+    "away_fg3a_10",
+    "away_ftm_10",
+    "away_fta_10",
+    "away_oreb_10",
+    "away_dreb_10",
+    "away_reb_10",
+    "away_ast_10",
+    "away_stl_10",
+    "away_blk_10",
+    "away_tov_10",
+    "away_pf_10",
+    "away_opp_pts_10",
+    "away_possessions_10",
+    "away_off_rating_10",
+    "away_def_rating_10",
+    "away_net_rating_10",
+    "away_winrate_20",
+    "away_pts_20",
+    "away_fgm_20",
+    "away_fga_20",
+    "away_fg3m_20",
+    "away_fg3a_20",
+    "away_ftm_20",
+    "away_fta_20",
+    "away_oreb_20",
+    "away_dreb_20",
+    "away_reb_20",
+    "away_ast_20",
+    "away_stl_20",
+    "away_blk_20",
+    "away_tov_20",
+    "away_pf_20",
+    "away_opp_pts_20",
+    "away_possessions_20",
+    "away_off_rating_20",
+    "away_def_rating_20",
+    "away_net_rating_20",
+    "away_roster_players",
+    "away_player_points_mean",
+    "away_player_points_top5",
+    "away_player_fga_mean",
+    "away_player_fga_top5",
+    "away_player_assists_mean",
+    "away_player_assists_top5",
+    "away_player_rebounds_mean",
+    "away_player_rebounds_top5",
+    "away_player_turnovers_mean",
+    "away_player_turnovers_top5",
+    "away_player_events_mean",
+    "away_player_events_top5",
+    "away_player_usage_concentration",
+    "diff_winrate_5",
+    "diff_winrate_10",
+    "diff_winrate_20",
+    "diff_pts_5",
+    "diff_opp_pts_5",
+    "diff_net_rating_10",
+    "diff_net_rating_20",
+    "diff_rest_days",
+    "diff_player_points_top5",
+    "diff_player_assists_top5",
+    "diff_player_rebounds_top5",
+    "diff_player_events_top5",
+    "elo_v2_home",
+    "elo_v2_away",
+    "elo_v2_diff",
+    "elo_v2_home_prob"
+  ],
+  "features": [
+    {
+      "name": "game_type_code",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 2.0
+    },
+    {
+      "name": "home_games_seen",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 4296.0
+    },
+    {
+      "name": "home_rest_days",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 1.0
+    },
+    {
+      "name": "home_back_to_back",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 1.0
+    },
+    {
+      "name": "home_winrate_5",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.2
+    },
+    {
+      "name": "home_pts_5",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 116.4
+    },
+    {
+      "name": "home_fgm_5",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 44.6
+    },
+    {
+      "name": "home_fga_5",
+      "dtype": "float64",
+      "missing_values_in_training": 13448,
+      "example_historical_value": 92.0
+    },
+    {
+      "name": "home_fg3m_5",
+      "dtype": "float64",
+      "missing_values_in_training": 12267,
+      "example_historical_value": 13.2
+    },
+    {
+      "name": "home_fg3a_5",
+      "dtype": "float64",
+      "missing_values_in_training": 16809,
+      "example_historical_value": 34.0
+    },
+    {
+      "name": "home_ftm_5",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 14.0
+    },
+    {
+      "name": "home_fta_5",
+      "dtype": "float64",
+      "missing_values_in_training": 1759,
+      "example_historical_value": 20.2
+    },
+    {
+      "name": "home_oreb_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17504,
+      "example_historical_value": 9.6
+    },
+    {
+      "name": "home_dreb_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17748,
+      "example_historical_value": 29.2
+    },
+    {
+      "name": "home_reb_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14230,
+      "example_historical_value": 38.8
+    },
+    {
+      "name": "home_ast_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14401,
+      "example_historical_value": 29.4
+    },
+    {
+      "name": "home_stl_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17255,
+      "example_historical_value": 8.6
+    },
+    {
+      "name": "home_blk_5",
+      "dtype": "float64",
+      "missing_values_in_training": 16783,
+      "example_historical_value": 6.8
+    },
+    {
+      "name": "home_tov_5",
+      "dtype": "float64",
+      "missing_values_in_training": 16855,
+      "example_historical_value": 13.2
+    },
+    {
+      "name": "home_pf_5",
+      "dtype": "float64",
+      "missing_values_in_training": 1936,
+      "example_historical_value": 20.2
+    },
+    {
+      "name": "home_opp_pts_5",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 125.4
+    },
+    {
+      "name": "home_possessions_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17524,
+      "example_historical_value": 104.488
+    },
+    {
+      "name": "home_off_rating_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17524,
+      "example_historical_value": 111.37312008565058
+    },
+    {
+      "name": "home_def_rating_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17524,
+      "example_historical_value": 120.55296858032162
+    },
+    {
+      "name": "home_net_rating_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17524,
+      "example_historical_value": -9.17984849467104
+    },
+    {
+      "name": "home_winrate_10",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.2
+    },
+    {
+      "name": "home_pts_10",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 108.7
+    },
+    {
+      "name": "home_fgm_10",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 40.9
+    },
+    {
+      "name": "home_fga_10",
+      "dtype": "float64",
+      "missing_values_in_training": 12550,
+      "example_historical_value": 90.4
+    },
+    {
+      "name": "home_fg3m_10",
+      "dtype": "float64",
+      "missing_values_in_training": 12249,
+      "example_historical_value": 11.5
+    },
+    {
+      "name": "home_fg3a_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16132,
+      "example_historical_value": 34.6
+    },
+    {
+      "name": "home_ftm_10",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 15.4
+    },
+    {
+      "name": "home_fta_10",
+      "dtype": "float64",
+      "missing_values_in_training": 1172,
+      "example_historical_value": 20.3
+    },
+    {
+      "name": "home_oreb_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17245,
+      "example_historical_value": 8.5
+    },
+    {
+      "name": "home_dreb_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17612,
+      "example_historical_value": 29.4
+    },
+    {
+      "name": "home_reb_10",
+      "dtype": "float64",
+      "missing_values_in_training": 13781,
+      "example_historical_value": 37.9
+    },
+    {
+      "name": "home_ast_10",
+      "dtype": "float64",
+      "missing_values_in_training": 14019,
+      "example_historical_value": 24.9
+    },
+    {
+      "name": "home_stl_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16861,
+      "example_historical_value": 7.8
+    },
+    {
+      "name": "home_blk_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16091,
+      "example_historical_value": 5.9
+    },
+    {
+      "name": "home_tov_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16217,
+      "example_historical_value": 13.3
+    },
+    {
+      "name": "home_pf_10",
+      "dtype": "float64",
+      "missing_values_in_training": 1550,
+      "example_historical_value": 19.2
+    },
+    {
+      "name": "home_opp_pts_10",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 122.8
+    },
+    {
+      "name": "home_possessions_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17285,
+      "example_historical_value": 104.132
+    },
+    {
+      "name": "home_off_rating_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17285,
+      "example_historical_value": 104.2570235219694
+    },
+    {
+      "name": "home_def_rating_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17285,
+      "example_historical_value": 118.94734523447632
+    },
+    {
+      "name": "home_net_rating_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17285,
+      "example_historical_value": -14.690321712506911
+    },
+    {
+      "name": "home_winrate_20",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.2
+    },
+    {
+      "name": "home_pts_20",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 109.15
+    },
+    {
+      "name": "home_fgm_20",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 39.55
+    },
+    {
+      "name": "home_fga_20",
+      "dtype": "float64",
+      "missing_values_in_training": 11379,
+      "example_historical_value": 87.15
+    },
+    {
+      "name": "home_fg3m_20",
+      "dtype": "float64",
+      "missing_values_in_training": 12223,
+      "example_historical_value": 12.15
+    },
+    {
+      "name": "home_fg3a_20",
+      "dtype": "float64",
+      "missing_values_in_training": 15298,
+      "example_historical_value": 36.15
+    },
+    {
+      "name": "home_ftm_20",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 17.9
+    },
+    {
+      "name": "home_fta_20",
+      "dtype": "float64",
+      "missing_values_in_training": 555,
+      "example_historical_value": 22.95
+    },
+    {
+      "name": "home_oreb_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16747,
+      "example_historical_value": 8.55
+    },
+    {
+      "name": "home_dreb_20",
+      "dtype": "float64",
+      "missing_values_in_training": 17331,
+      "example_historical_value": 30.55
+    },
+    {
+      "name": "home_reb_20",
+      "dtype": "float64",
+      "missing_values_in_training": 13164,
+      "example_historical_value": 39.1
+    },
+    {
+      "name": "home_ast_20",
+      "dtype": "float64",
+      "missing_values_in_training": 13485,
+      "example_historical_value": 23.9
+    },
+    {
+      "name": "home_stl_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16147,
+      "example_historical_value": 7.9
+    },
+    {
+      "name": "home_blk_20",
+      "dtype": "float64",
+      "missing_values_in_training": 15231,
+      "example_historical_value": 5.4
+    },
+    {
+      "name": "home_tov_20",
+      "dtype": "float64",
+      "missing_values_in_training": 15406,
+      "example_historical_value": 14.15
+    },
+    {
+      "name": "home_pf_20",
+      "dtype": "float64",
+      "missing_values_in_training": 1036,
+      "example_historical_value": 19.0
+    },
+    {
+      "name": "home_opp_pts_20",
+      "dtype": "float64",
+      "missing_values_in_training": 28,
+      "example_historical_value": 121.45
+    },
+    {
+      "name": "home_possessions_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16831,
+      "example_historical_value": 102.848
+    },
+    {
+      "name": "home_off_rating_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16831,
+      "example_historical_value": 106.20100420342172
+    },
+    {
+      "name": "home_def_rating_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16831,
+      "example_historical_value": 119.71215717272877
+    },
+    {
+      "name": "home_net_rating_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16831,
+      "example_historical_value": -13.511152969307028
+    },
+    {
+      "name": "home_roster_players",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 19.0
+    },
+    {
+      "name": "home_player_points_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 11.02972811343962
+    },
+    {
+      "name": "home_player_points_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 100.74444444444444
+    },
+    {
+      "name": "home_player_fga_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 8.697997359356739
+    },
+    {
+      "name": "home_player_fga_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 73.23888888888888
+    },
+    {
+      "name": "home_player_assists_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 2.7230605744354324
+    },
+    {
+      "name": "home_player_assists_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 27.183333333333337
+    },
+    {
+      "name": "home_player_rebounds_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 3.666029586937604
+    },
+    {
+      "name": "home_player_rebounds_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 29.888095238095236
+    },
+    {
+      "name": "home_player_turnovers_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 1.2889742474678112
+    },
+    {
+      "name": "home_player_turnovers_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 11.115277777777775
+    },
+    {
+      "name": "home_player_events_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 28.509222476869535
+    },
+    {
+      "name": "home_player_events_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 217.2468253968254
+    },
+    {
+      "name": "home_player_usage_concentration",
+      "dtype": "float64",
+      "missing_values_in_training": 29892,
+      "example_historical_value": 0.1329778639521732
+    },
+    {
+      "name": "away_games_seen",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 5901.0
+    },
+    {
+      "name": "away_rest_days",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 2.0
+    },
+    {
+      "name": "away_back_to_back",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.0
+    },
+    {
+      "name": "away_winrate_5",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.8
+    },
+    {
+      "name": "away_pts_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 123.0
+    },
+    {
+      "name": "away_fgm_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 44.0
+    },
+    {
+      "name": "away_fga_5",
+      "dtype": "float64",
+      "missing_values_in_training": 13460,
+      "example_historical_value": 90.6
+    },
+    {
+      "name": "away_fg3m_5",
+      "dtype": "float64",
+      "missing_values_in_training": 12267,
+      "example_historical_value": 16.8
+    },
+    {
+      "name": "away_fg3a_5",
+      "dtype": "float64",
+      "missing_values_in_training": 16813,
+      "example_historical_value": 42.8
+    },
+    {
+      "name": "away_ftm_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 18.2
+    },
+    {
+      "name": "away_fta_5",
+      "dtype": "float64",
+      "missing_values_in_training": 1775,
+      "example_historical_value": 22.8
+    },
+    {
+      "name": "away_oreb_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17508,
+      "example_historical_value": 15.2
+    },
+    {
+      "name": "away_dreb_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17726,
+      "example_historical_value": 33.6
+    },
+    {
+      "name": "away_reb_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14213,
+      "example_historical_value": 48.8
+    },
+    {
+      "name": "away_ast_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14393,
+      "example_historical_value": 31.2
+    },
+    {
+      "name": "away_stl_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17264,
+      "example_historical_value": 7.4
+    },
+    {
+      "name": "away_blk_5",
+      "dtype": "float64",
+      "missing_values_in_training": 16772,
+      "example_historical_value": 5.0
+    },
+    {
+      "name": "away_tov_5",
+      "dtype": "float64",
+      "missing_values_in_training": 16857,
+      "example_historical_value": 17.4
+    },
+    {
+      "name": "away_pf_5",
+      "dtype": "float64",
+      "missing_values_in_training": 1893,
+      "example_historical_value": 20.4
+    },
+    {
+      "name": "away_opp_pts_5",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 111.6
+    },
+    {
+      "name": "away_possessions_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17531,
+      "example_historical_value": 102.83200000000002
+    },
+    {
+      "name": "away_off_rating_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17531,
+      "example_historical_value": 119.6806356371703
+    },
+    {
+      "name": "away_def_rating_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17531,
+      "example_historical_value": 108.14160185184058
+    },
+    {
+      "name": "away_net_rating_5",
+      "dtype": "float64",
+      "missing_values_in_training": 17531,
+      "example_historical_value": 11.539033785329726
+    },
+    {
+      "name": "away_winrate_10",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.7
+    },
+    {
+      "name": "away_pts_10",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 119.8
+    },
+    {
+      "name": "away_fgm_10",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 42.9
+    },
+    {
+      "name": "away_fga_10",
+      "dtype": "float64",
+      "missing_values_in_training": 12574,
+      "example_historical_value": 89.2
+    },
+    {
+      "name": "away_fg3m_10",
+      "dtype": "float64",
+      "missing_values_in_training": 12255,
+      "example_historical_value": 15.9
+    },
+    {
+      "name": "away_fg3a_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16154,
+      "example_historical_value": 42.6
+    },
+    {
+      "name": "away_ftm_10",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 18.1
+    },
+    {
+      "name": "away_fta_10",
+      "dtype": "float64",
+      "missing_values_in_training": 1145,
+      "example_historical_value": 22.6
+    },
+    {
+      "name": "away_oreb_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17231,
+      "example_historical_value": 13.4
+    },
+    {
+      "name": "away_dreb_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17590,
+      "example_historical_value": 33.0
+    },
+    {
+      "name": "away_reb_10",
+      "dtype": "float64",
+      "missing_values_in_training": 13791,
+      "example_historical_value": 46.4
+    },
+    {
+      "name": "away_ast_10",
+      "dtype": "float64",
+      "missing_values_in_training": 14060,
+      "example_historical_value": 29.9
+    },
+    {
+      "name": "away_stl_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16841,
+      "example_historical_value": 7.1
+    },
+    {
+      "name": "away_blk_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16112,
+      "example_historical_value": 4.6
+    },
+    {
+      "name": "away_tov_10",
+      "dtype": "float64",
+      "missing_values_in_training": 16236,
+      "example_historical_value": 16.0
+    },
+    {
+      "name": "away_pf_10",
+      "dtype": "float64",
+      "missing_values_in_training": 1500,
+      "example_historical_value": 19.7
+    },
+    {
+      "name": "away_opp_pts_10",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 113.5
+    },
+    {
+      "name": "away_possessions_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17273,
+      "example_historical_value": 101.744
+    },
+    {
+      "name": "away_off_rating_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17273,
+      "example_historical_value": 117.75700676738045
+    },
+    {
+      "name": "away_def_rating_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17273,
+      "example_historical_value": 110.9405362005136
+    },
+    {
+      "name": "away_net_rating_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17273,
+      "example_historical_value": 6.816470566866852
+    },
+    {
+      "name": "away_winrate_20",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.6
+    },
+    {
+      "name": "away_pts_20",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 119.0
+    },
+    {
+      "name": "away_fgm_20",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 43.15
+    },
+    {
+      "name": "away_fga_20",
+      "dtype": "float64",
+      "missing_values_in_training": 11405,
+      "example_historical_value": 89.85
+    },
+    {
+      "name": "away_fg3m_20",
+      "dtype": "float64",
+      "missing_values_in_training": 12226,
+      "example_historical_value": 15.9
+    },
+    {
+      "name": "away_fg3a_20",
+      "dtype": "float64",
+      "missing_values_in_training": 15295,
+      "example_historical_value": 42.55
+    },
+    {
+      "name": "away_ftm_20",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 16.8
+    },
+    {
+      "name": "away_fta_20",
+      "dtype": "float64",
+      "missing_values_in_training": 538,
+      "example_historical_value": 20.85
+    },
+    {
+      "name": "away_oreb_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16795,
+      "example_historical_value": 12.15
+    },
+    {
+      "name": "away_dreb_20",
+      "dtype": "float64",
+      "missing_values_in_training": 17364,
+      "example_historical_value": 33.65
+    },
+    {
+      "name": "away_reb_20",
+      "dtype": "float64",
+      "missing_values_in_training": 13142,
+      "example_historical_value": 45.8
+    },
+    {
+      "name": "away_ast_20",
+      "dtype": "float64",
+      "missing_values_in_training": 13503,
+      "example_historical_value": 29.55
+    },
+    {
+      "name": "away_stl_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16180,
+      "example_historical_value": 7.1
+    },
+    {
+      "name": "away_blk_20",
+      "dtype": "float64",
+      "missing_values_in_training": 15228,
+      "example_historical_value": 4.5
+    },
+    {
+      "name": "away_tov_20",
+      "dtype": "float64",
+      "missing_values_in_training": 15405,
+      "example_historical_value": 16.15
+    },
+    {
+      "name": "away_pf_20",
+      "dtype": "float64",
+      "missing_values_in_training": 997,
+      "example_historical_value": 19.9
+    },
+    {
+      "name": "away_opp_pts_20",
+      "dtype": "float64",
+      "missing_values_in_training": 14,
+      "example_historical_value": 115.0
+    },
+    {
+      "name": "away_possessions_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16874,
+      "example_historical_value": 103.024
+    },
+    {
+      "name": "away_off_rating_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16874,
+      "example_historical_value": 115.56554047403031
+    },
+    {
+      "name": "away_def_rating_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16874,
+      "example_historical_value": 111.11049084484895
+    },
+    {
+      "name": "away_net_rating_20",
+      "dtype": "float64",
+      "missing_values_in_training": 16874,
+      "example_historical_value": 4.455049629181368
+    },
+    {
+      "name": "away_roster_players",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 15.0
+    },
+    {
+      "name": "away_player_points_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 9.554126984126984
+    },
+    {
+      "name": "away_player_points_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 96.30079365079364
+    },
+    {
+      "name": "away_player_fga_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 7.418779587858535
+    },
+    {
+      "name": "away_player_fga_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 71.60530492898914
+    },
+    {
+      "name": "away_player_assists_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 2.4947528543581177
+    },
+    {
+      "name": "away_player_assists_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 24.642857142857142
+    },
+    {
+      "name": "away_player_rebounds_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 3.843764967975494
+    },
+    {
+      "name": "away_player_rebounds_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 33.228696741854634
+    },
+    {
+      "name": "away_player_turnovers_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 1.3686271233639653
+    },
+    {
+      "name": "away_player_turnovers_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 12.690517961570592
+    },
+    {
+      "name": "away_player_events_mean",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 25.948464912280695
+    },
+    {
+      "name": "away_player_events_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 214.7116959064327
+    },
+    {
+      "name": "away_player_usage_concentration",
+      "dtype": "float64",
+      "missing_values_in_training": 29861,
+      "example_historical_value": 0.1486093143596377
+    },
+    {
+      "name": "diff_winrate_5",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": -0.6000000000000001
+    },
+    {
+      "name": "diff_winrate_10",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": -0.4999999999999999
+    },
+    {
+      "name": "diff_winrate_20",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": -0.3999999999999999
+    },
+    {
+      "name": "diff_pts_5",
+      "dtype": "float64",
+      "missing_values_in_training": 37,
+      "example_historical_value": -6.599999999999994
+    },
+    {
+      "name": "diff_opp_pts_5",
+      "dtype": "float64",
+      "missing_values_in_training": 37,
+      "example_historical_value": 13.800000000000011
+    },
+    {
+      "name": "diff_net_rating_10",
+      "dtype": "float64",
+      "missing_values_in_training": 17801,
+      "example_historical_value": -21.50679227937376
+    },
+    {
+      "name": "diff_net_rating_20",
+      "dtype": "float64",
+      "missing_values_in_training": 17614,
+      "example_historical_value": -17.966202598488398
+    },
+    {
+      "name": "diff_rest_days",
+      "dtype": "int64",
+      "missing_values_in_training": 0,
+      "example_historical_value": -1.0
+    },
+    {
+      "name": "diff_player_points_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29940,
+      "example_historical_value": 4.443650793650789
+    },
+    {
+      "name": "diff_player_assists_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29940,
+      "example_historical_value": 2.540476190476191
+    },
+    {
+      "name": "diff_player_rebounds_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29940,
+      "example_historical_value": -3.340601503759398
+    },
+    {
+      "name": "diff_player_events_top5",
+      "dtype": "float64",
+      "missing_values_in_training": 29940,
+      "example_historical_value": 2.5351294903926487
+    },
+    {
+      "name": "elo_v2_home",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 1321.4300620577378
+    },
+    {
+      "name": "elo_v2_away",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 1588.6929691682158
+    },
+    {
+      "name": "elo_v2_diff",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": -267.26290711047795
+    },
+    {
+      "name": "elo_v2_home_prob",
+      "dtype": "float64",
+      "missing_values_in_training": 0,
+      "example_historical_value": 0.2431407937595835
+    }
+  ]
+}

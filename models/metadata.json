@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "architecture": "50% logistic + 50% mean of 3 NNs",
+  "feature_count": 177,
+  "training_games": 60192,
+  "last_training_game": "2023-04-09",
+  "nn_epochs": {
+    "1": 5,
+    "2": 4,
+    "3": 7
+  },
+  "historical_accuracy": 0.64272,
+  "historical_log_loss": 0.63334,
+  "note": "Historical metrics describe earlier rolling-season experiments, not this refitted production model."
+}
